@@ -1,6 +1,6 @@
 h1{ text-align: center; margin-bottom: 50px;}
-#balloon-map{
-    width: 224px;
+.balloon-map{
+    width: 30rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -11,7 +11,6 @@ h1{ text-align: center; margin-bottom: 50px;}
     flex-grow: 1;
     width: 50px;
     margin: 3px;
-    background: rgb(20,189,34);
     opacity: .9;
     border-radius: 50%;
     height: 50px;
@@ -67,4 +66,33 @@ h1{ text-align: center; margin-bottom: 50px;}
     40%, 60% {
       transform: translate3d(4px, 0, 0);
     }
+  }
+
+  /* COLORS */
+  .red{
+    background-color: red;
+  }
+
+  .blue{
+    background-color: blue;
+  }
+
+  .pink{
+    background-color: pink;
+  }
+
+  .purple{
+    background-color: purple;
+  }
+
+  .gray{
+    background-color: gray;
+  }
+
+  .green{
+    background-color: green;
+  }
+
+  .yellow{
+    background-color: yellow;
   }
