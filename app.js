@@ -15,6 +15,7 @@ const balloon11 = document.querySelector("#balloon11");
 const balloon12 = document.querySelector("#balloon12");
 const title = document.querySelector("#title");
 let balloonCount = document.querySelector("#balloon-count");
+const startOverButton = document.querySelector("#start-over");
 let count = 12;
 
 const popBalloons = (ballon) => {
@@ -29,9 +30,14 @@ const popBalloons = (ballon) => {
     }else if(count === 1){
         ballon.classList.add("popped");
         title.innerHTML = `No ballons left! You win!`
+        startOverButton.classList.remove("hidden");
     }
     
 }
+
+startOverButton.addEventListener("click", () => {
+    window.location.reload();
+});
 
 
 
