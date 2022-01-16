@@ -1,4 +1,12 @@
-h1{ text-align: center; margin-bottom: 50px;}
+#title-and-button{ text-align: center; margin-bottom: 50px;}
+button{
+  margin-top: 5rem;
+  width: 25rem;
+  height: 5rem;
+}
+.hidden{
+  display: none;
+}
 .balloon-map{
     width: 30rem;
     display: flex;
@@ -96,3 +104,7 @@ h1{ text-align: center; margin-bottom: 50px;}
   .yellow{
     background-color: yellow;
   }
+
+  /* START OVER BUTTON */
+
+  

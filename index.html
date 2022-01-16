@@ -8,7 +8,11 @@
         <title>Pop the Ballons</title>
     </head>
     <body>
-            <h1 id="title">Pop all the <span id="balloon-count"></span> balloons! <br />🤪 🎈 🎊</h1>
+            <div id="title-and-button">
+                <h1 id="title">Pop all the <span id="balloon-count"></span> balloons! <br />🤪 🎈 🎊</h1>
+                <button id="start-over" type="button" class="btn btn-success">Start Over</button>
+            </div>
+            
             <div class="balloon-map">
                 <div id="balloon1" class="balloon" onclick="popBalloons(balloon1)"></div>
                 <div id="balloon2" class="balloon" onclick="popBalloons(balloon2)"></div>
@@ -29,6 +33,7 @@
                 <div id="balloon11" class="balloon" onclick="popBalloons(balloon11)"></div>
                 <div id="balloon12" class="balloon" onclick="popBalloons(balloon12)"></div>
             </div>
+            
             <script src="app.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>

@@ -18,7 +18,7 @@ let balloonCount = document.querySelector("#balloon-count");
 let count = 12;
 
 const popBalloons = (ballon) => {
-    if(count>1){
+    if(count>2){
         ballon.classList.add("popped");
         count--;
         balloonCount.innerHTML = count;
@@ -26,8 +26,9 @@ const popBalloons = (ballon) => {
         title.innerHTML = `Pop the <span id="balloon-count">1</span> balloon left!`
         ballon.classList.add("popped");
         count--;
-    }else if(count === 0){
-        title.innerHTML = `No ballons left! You win! Click the Start over button to refresh the page!`
+    }else if(count === 1){
+        ballon.classList.add("popped");
+        title.innerHTML = `No ballons left! You win!`
     }
     
 }
